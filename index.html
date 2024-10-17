@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScog79WMT7jdZUQxdv5I1hDUhE6gLMyDxDc-Q1EIKaLycyaTJYbMXMDtVm05Wf5DmhM_c&usqp=CAU"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Gary Casas Wong</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Gary Casas Wong</h1>
+      <h2 class="subTitulo">Mi Portafolio</h2>
+    </header>
+    <main>
+      <section class="sobreMi">
+        <h2>Sobre Mi</h2>
+        <article>
+          <p>
+            Soy contador público de profesión, proactivo, responsable y
+            autodidacta con amplia apertura para dominar nuevas tecnologías para
+            el mejor aprovechamiento de los recursos. Con experiencia en áreas
+            finanzas, contabilidad general, cobranza, reportes de inventarios
+            físicos y remuneraciones. Siguiendo el objetivo de crear nuevas
+            propuestas tanto para la mejora y el crecimiento de la organización.
+          </p>
+        </article>
+      </section>
+      <section class="misTecnologias">
+        <h2>Mis Tecnologías Favoritas</h2>
+        <div class="contenedor">
+          <div>
+            <h3>HTML5</h3>
+            <img
+              src="assets/img/HTML.png"
+              alt="html"
+              width="250"
+              height="300"
+              class="html"
+            />
+          </div>
+          <div>
+            <h3>CSS</h3>
+            <img
+              src="assets/img/CSS.png"
+              alt="css"
+              width="250"
+              height="300"
+              class="css"
+            />
+          </div>
+          <div>
+            <h3>JAVASCRIPT</h3>
+            <img
+              src="assets/img/JAVASCRIPT.png"
+              alt="javascript"
+              width="250"
+              height="300"
+              class="js"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <form>
+          <h2>Mis Actividades Favoritas</h2>
+          <div class="formulario">
+            <div>
+              <input
+                type="text"
+                placeholder="Titulo de la actividad"
+                id="activityTitle"
+              />
+            </div>
+            <div>
+              <textarea
+                name="Description"
+                id="activityDescription"
+                placeholder="Descripcion de la actividad"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="URL de imagen"
+                id="activityimgUrl"
+              />
+            </div>
+            <button type="button" id="sendActivityButton">Add Activity</button>
+          </div>
+        </form>
+      </section>
+      <div id="cardContainer"></div>
+      <div id="noActivityMessage">
+        <span>Sin actividad por el momento</span>
+      </div>
+    </main>
+    <footer>
+      <span>Hecho por <strong>Gary CW.</strong></span
+      ><br />
+      Todos los derechos reservados &copy; 2024
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
